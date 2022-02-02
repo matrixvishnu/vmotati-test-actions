@@ -1,0 +1,11 @@
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    name: GitHub Actions Demo
+    steps:
+      - run: echo "this is the test message from git hub cicd"
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
